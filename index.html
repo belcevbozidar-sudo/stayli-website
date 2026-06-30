@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stayli — World-Class Websites for Real Estate Agencies</title>
+  <meta name="description" content="We design and build bespoke, high-converting websites for premium real estate agencies. Elevate your property brand today.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=1.7">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header-container">
+      <a href="#" class="logo" id="logo-link">
+        <svg class="logo-icon" width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="16" cy="16" r="11" stroke="white" stroke-width="2.5"/>
+          <path d="M16 5.5C10.201 5.5 5.5 10.201 5.5 16C5.5 21.799 10.201 26.5 16 26.5V5.5Z" fill="white"/>
+        </svg>
+        <span class="logo-text">Stayli</span>
+      </a>
+
+      <nav class="nav" id="desktop-nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#" class="nav-link active" data-i18n="nav.home">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link" data-i18n="nav.portfolio">Portfolio</a></li>
+          <li class="nav-item"><a href="#" class="nav-link" data-i18n="nav.services">Services</a></li>
+          <li class="nav-item"><a href="#" class="nav-link" data-i18n="nav.process">Process</a></li>
+          <li class="nav-item"><a href="#" class="nav-link" data-i18n="nav.contact">Contact</a></li>
+          <li class="nav-item dropdown" id="pages-dropdown">
+            <a href="#" class="nav-link dropdown-toggle" id="dropdown-toggle">
+              <span data-i18n="nav.features">Features</span>
+              <svg class="chevron-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </a>
+            <ul class="dropdown-menu" id="dropdown-menu">
+              <li><a href="#" class="dropdown-item" data-i18n="nav.feat.idx">IDX/MLS Feeds</a></li>
+              <li><a href="#" class="dropdown-item" data-i18n="nav.feat.maps">Interactive Maps</a></li>
+              <li><a href="#" class="dropdown-item" data-i18n="nav.feat.crm">CRM Integrations</a></li>
+              <li><a href="#" class="dropdown-item" data-i18n="nav.feat.seo">SEO Tuning</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="2" y1="12" x2="22" y2="12"></line>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+          </svg>
+          <span id="lang-current">EN</span>
+        </button>
+        <a href="#" class="btn btn-primary" id="get-started-btn" data-i18n="nav.cta">Get started</a>
+        <button class="mobile-menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobile-nav">
+    <ul class="mobile-nav-list">
+      <li><a href="#" class="mobile-nav-link active" data-i18n="nav.home">Home</a></li>
+      <li><a href="#" class="mobile-nav-link" data-i18n="nav.portfolio">Portfolio</a></li>
+      <li><a href="#" class="mobile-nav-link" data-i18n="nav.services">Services</a></li>
+      <li><a href="#" class="mobile-nav-link" data-i18n="nav.process">Process</a></li>
+      <li><a href="#" class="mobile-nav-link" data-i18n="nav.contact">Contact</a></li>
+      <li class="mobile-dropdown">
+        <button class="mobile-dropdown-toggle" id="mobile-dropdown-toggle">
+          <span data-i18n="nav.features">Features</span>
+          <svg class="chevron-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+        <ul class="mobile-dropdown-menu" id="mobile-dropdown-menu">
+          <li><a href="#" class="mobile-dropdown-item" data-i18n="nav.feat.idx">IDX/MLS Feeds</a></li>
+          <li><a href="#" class="mobile-dropdown-item" data-i18n="nav.feat.maps">Interactive Maps</a></li>
+          <li><a href="#" class="mobile-dropdown-item" data-i18n="nav.feat.crm">CRM Integrations</a></li>
+          <li><a href="#" class="mobile-dropdown-item" data-i18n="nav.feat.seo">SEO Tuning</a></li>
+        </ul>
+      </li>
+      <li><a href="#" class="btn btn-primary btn-block" id="mobile-get-started-btn" data-i18n="nav.cta">Get started</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero" id="hero-section">
+    <div class="hero-bg-container">
+      <div class="hero-bg-image"></div>
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-container">
+      <div class="hero-content">
+        <h1 class="hero-title" id="hero-title" data-i18n="hero.title">World-class websites for<br>real estate agencies</h1>
+        <p class="hero-subtitle" id="hero-subtitle" data-i18n="hero.subtitle">We craft high-end, bespoke digital experiences for premium property brands.<br>Attract luxury listings and convert buyers with award-winning design.</p>
+        <div class="hero-actions">
+          <div class="search-bar-container">
+            <div class="search-bar">
+              <div class="search-icon-wrapper">
+                <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+              </div>
+              <input type="text" class="search-input" id="search-input" placeholder="" readonly>
+              <button class="search-btn" id="search-submit-btn" data-i18n="hero.search_btn">Search</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features-section" id="features-section">
+    <div class="features-container">
+      <span class="section-tag" data-i18n="feat.tag">Our Expertise</span>
+      <h2 class="section-title" data-i18n="feat.title">Designed to win premium listings</h2>
+      <p class="section-subtitle" data-i18n="feat.subtitle">We equip your agency with high-performance features that outpace the competition and convert leads.</p>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <svg class="feature-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"></polygon>
+              <line x1="12" y1="2" x2="12" y2="22"></line>
+              <path d="M2 8.5l10 7 10-7"></path>
+            </svg>
+          </div>
+          <h3 class="feature-card-title" data-i18n="feat.card1.title">Design Unlike Any Other Agency</h3>
+          <p class="feature-card-desc" data-i18n="feat.card1.desc">Your website looks nothing like any other real estate agency site. Clients feel the difference the moment they arrive — a distinctive visual identity that signals premium quality before a single word is read.</p>
+          <a href="#" class="feature-card-link">
+            <span data-i18n="feat.card1.link">See Our Work</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <svg class="feature-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="4" y1="21" x2="4" y2="14"></line>
+              <line x1="4" y1="10" x2="4" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="12"></line>
+              <line x1="12" y1="8" x2="12" y2="3"></line>
+              <line x1="20" y1="21" x2="20" y2="16"></line>
+              <line x1="20" y1="12" x2="20" y2="3"></line>
+              <line x1="1" y1="14" x2="7" y2="14"></line>
+              <line x1="9" y1="8" x2="15" y2="8"></line>
+              <line x1="17" y1="16" x2="23" y2="16"></line>
+            </svg>
+          </div>
+          <h3 class="feature-card-title" data-i18n="feat.card2.title">Smart Search & Filters</h3>
+          <p class="feature-card-desc" data-i18n="feat.card2.desc">Advanced property search built for the local market — filter by neighborhood, property type, size, and price range, with instant results and no page reloads.</p>
+          <a href="#" class="feature-card-link">
+            <span data-i18n="feat.card2.link">Explore Smart Search</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <svg class="feature-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
+          </div>
+          <h3 class="feature-card-title" data-i18n="feat.card3.title">Lead Capture & Inquiry Flows</h3>
+          <p class="feature-card-desc" data-i18n="feat.card3.desc">High-converting inquiry forms with WhatsApp and Viber integration, automated follow-up sequences, and a clean overview of every incoming lead.</p>
+          <a href="#" class="feature-card-link">
+            <span data-i18n="feat.card3.link">Explore Lead Tools</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust -->
+  <section class="trust-section" id="trust-section">
+    <div class="trust-container">
+      <p class="trust-label" data-i18n="trust.label">Trusted by ambitious agencies worldwide</p>
+
+      <div class="marquee">
+        <div class="marquee-track">
+          <span class="marquee-item">Avenue Estate</span><span class="marquee-dot"></span>
+          <span class="marquee-item">Primo Homes</span><span class="marquee-dot"></span>
+          <span class="marquee-item">Balkan Residence</span><span class="marquee-dot"></span>
+          <span class="marquee-item">Citadel Properties</span><span class="marquee-dot"></span>
+          <span class="marquee-item">Horizon Group</span><span class="marquee-dot"></span>
+          <span class="marquee-item">Apex Properties</span><span class="marquee-dot"></span>
+          <span class="marquee-item">Perla Estate</span><span class="marquee-dot"></span>
+          <span class="marquee-item">Nova Residence</span><span class="marquee-dot"></span>
+          <span class="marquee-item">Avenue Estate</span><span class="marquee-dot"></span>
+          <span class="marquee-item">Primo Homes</span><span class="marquee-dot"></span>
+          <span class="marquee-item">Balkan Residence</span><span class="marquee-dot"></span>
+          <span class="marquee-item">Citadel Properties</span><span class="marquee-dot"></span>
+          <span class="marquee-item">Horizon Group</span><span class="marquee-dot"></span>
+          <span class="marquee-item">Apex Properties</span><span class="marquee-dot"></span>
+          <span class="marquee-item">Perla Estate</span><span class="marquee-dot"></span>
+          <span class="marquee-item">Nova Residence</span><span class="marquee-dot"></span>
+        </div>
+      </div>
+
+      <div class="trust-stats">
+        <div class="trust-stat">
+          <div class="trust-stat-value"><span class="trust-stat-number" data-count="150">0</span><span class="trust-stat-suffix">+</span></div>
+          <span class="trust-stat-label" data-i18n="trust.stat1">Agencies launched</span>
+        </div>
+        <div class="trust-stat-divider"></div>
+        <div class="trust-stat">
+          <div class="trust-stat-value"><span class="trust-stat-number" data-count="240">0</span><span class="trust-stat-suffix">%</span></div>
+          <span class="trust-stat-label" data-i18n="trust.stat2">Avg. inquiry increase</span>
+        </div>
+        <div class="trust-stat-divider"></div>
+        <div class="trust-stat">
+          <div class="trust-stat-value"><span class="trust-stat-number" data-count="98">0</span><span class="trust-stat-suffix">%</span></div>
+          <span class="trust-stat-label" data-i18n="trust.stat3">Client retention rate</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section class="portfolio-section" id="portfolio-section">
+    <div class="portfolio-header">
+      <span class="section-tag" data-i18n="port.tag">Selected Work</span>
+      <h2 class="section-title" data-i18n="port.title">Websites that close listings</h2>
+      <p class="section-subtitle" data-i18n="port.subtitle">A glimpse at the bespoke platforms we've engineered for premium agencies — drag to explore.</p>
+    </div>
+
+    <div class="portfolio-carousel">
+      <div class="portfolio-track" id="portfolio-track">
+
+        <article class="portfolio-card">
+          <span class="portfolio-tag" data-i18n="port.card1.tag">Luxury Listings</span>
+          <div class="browser-mockup theme-amber">
+            <div class="browser-bar">
+              <div class="browser-dots"><span></span><span></span><span></span></div>
+              <div class="browser-url"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="5" y="11" width="14" height="9" rx="1.5"></rect><path d="M8 11V7a4 4 0 0 1 8 0v4"></path></svg>harborrealty.com</div>
+            </div>
+            <div class="browser-body">
+              <div class="mock-nav"><span class="mock-logo"></span><span class="mock-link"></span><span class="mock-link"></span><span class="mock-pill"></span></div>
+              <div class="mock-hero"></div>
+              <div class="mock-grid"><span></span><span></span><span></span></div>
+            </div>
+          </div>
+          <div class="portfolio-meta">
+            <h3>Harbor Realty</h3>
+            <p data-i18n="port.card1.desc">Coastal luxury listings platform with custom interactive map search.</p>
+          </div>
+        </article>
+
+        <article class="portfolio-card">
+          <span class="portfolio-tag" data-i18n="port.card2.tag">Boutique Agency</span>
+          <div class="browser-mockup theme-teal">
+            <div class="browser-bar">
+              <div class="browser-dots"><span></span><span></span><span></span></div>
+              <div class="browser-url"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="5" y="11" width="14" height="9" rx="1.5"></rect><path d="M8 11V7a4 4 0 0 1 8 0v4"></path></svg>vantageproperties.com</div>
+            </div>
+            <div class="browser-body">
+              <div class="mock-nav"><span class="mock-logo"></span><span class="mock-link"></span><span class="mock-link"></span><span class="mock-pill"></span></div>
+              <div class="mock-hero"></div>
+              <div class="mock-grid"><span></span><span></span><span></span></div>
+            </div>
+          </div>
+          <div class="portfolio-meta">
+            <h3>Vantage Properties</h3>
+            <p data-i18n="port.card2.desc">Minimalist brand site built around a fast, filterable listings grid.</p>
+          </div>
+        </article>
+
+        <article class="portfolio-card">
+          <span class="portfolio-tag" data-i18n="port.card3.tag">Commercial Real Estate</span>
+          <div class="browser-mockup theme-violet">
+            <div class="browser-bar">
+              <div class="browser-dots"><span></span><span></span><span></span></div>
+              <div class="browser-url"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="5" y="11" width="14" height="9" rx="1.5"></rect><path d="M8 11V7a4 4 0 0 1 8 0v4"></path></svg>meridiangroup.com</div>
+            </div>
+            <div class="browser-body">
+              <div class="mock-nav"><span class="mock-logo"></span><span class="mock-link"></span><span class="mock-link"></span><span class="mock-pill"></span></div>
+              <div class="mock-hero"></div>
+              <div class="mock-grid"><span></span><span></span><span></span></div>
+            </div>
+          </div>
+          <div class="portfolio-meta">
+            <h3>Meridian Group</h3>
+            <p data-i18n="port.card3.desc">Enterprise commercial portfolio with investor-grade data rooms.</p>
+          </div>
+        </article>
+
+        <article class="portfolio-card">
+          <span class="portfolio-tag" data-i18n="port.card4.tag">New Developments</span>
+          <div class="browser-mockup theme-rose">
+            <div class="browser-bar">
+              <div class="browser-dots"><span></span><span></span><span></span></div>
+              <div class="browser-url"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="5" y="11" width="14" height="9" rx="1.5"></rect><path d="M8 11V7a4 4 0 0 1 8 0v4"></path></svg>northpeak.estates</div>
+            </div>
+            <div class="browser-body">
+              <div class="mock-nav"><span class="mock-logo"></span><span class="mock-link"></span><span class="mock-link"></span><span class="mock-pill"></span></div>
+              <div class="mock-hero"></div>
+              <div class="mock-grid"><span></span><span></span><span></span></div>
+            </div>
+          </div>
+          <div class="portfolio-meta">
+            <h3>Northpeak Estates</h3>
+            <p data-i18n="port.card4.desc">Pre-launch microsite with reservation funnel for a new development.</p>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="portfolio-controls">
+        <button class="portfolio-arrow" id="portfolio-prev" aria-label="Previous project">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+        </button>
+        <div class="portfolio-progress"><span class="portfolio-progress-bar" id="portfolio-progress-bar"></span></div>
+        <button class="portfolio-arrow" id="portfolio-next" aria-label="Next project">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="process-section" id="process-section">
+    <div class="process-container">
+      <span class="section-tag" data-i18n="proc.tag">How We Work</span>
+      <h2 class="section-title" data-i18n="proc.title">From first call to live site in 4 weeks</h2>
+      <p class="section-subtitle" data-i18n="proc.subtitle">A streamlined, transparent process built for busy agency owners — no guesswork, no surprises.</p>
+
+      <div class="process-timeline">
+        <div class="process-line"><span class="process-line-fill" id="process-line-fill"></span></div>
+
+        <div class="process-step">
+          <div class="process-number">01</div>
+          <div class="process-icon-wrapper">
+            <svg class="process-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect><line x1="12" y1="11" x2="16" y2="11"></line><line x1="12" y1="16" x2="16" y2="16"></line><line x1="8" y1="11" x2="8.01" y2="11"></line><line x1="8" y1="16" x2="8.01" y2="16"></line></svg>
+          </div>
+          <h3 class="process-step-title" data-i18n="proc.step1.title">Tell Us About Your Agency</h3>
+          <p class="process-step-desc" data-i18n="proc.step1.desc">We learn your brand, your listings, and your growth goals in a focused 30-minute strategy session.</p>
+        </div>
+
+        <div class="process-step">
+          <div class="process-number">02</div>
+          <div class="process-icon-wrapper">
+            <svg class="process-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+          </div>
+          <h3 class="process-step-title" data-i18n="proc.step2.title">Bespoke Design</h3>
+          <p class="process-step-desc" data-i18n="proc.step2.desc">A custom visual direction shaped around your brand — not a template — reviewed with you at every stage.</p>
+        </div>
+
+        <div class="process-step">
+          <div class="process-number">03</div>
+          <div class="process-icon-wrapper">
+            <svg class="process-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+          </div>
+          <h3 class="process-step-title" data-i18n="proc.step3.title">Build &amp; Integrate</h3>
+          <p class="process-step-desc" data-i18n="proc.step3.desc">We develop the platform and connect your IDX/MLS feed, CRM, and lead-routing tools end to end.</p>
+        </div>
+
+        <div class="process-step">
+          <div class="process-number">04</div>
+          <div class="process-icon-wrapper">
+            <svg class="process-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+          </div>
+          <h3 class="process-step-title" data-i18n="proc.step4.title">Launch &amp; Support</h3>
+          <p class="process-step-desc" data-i18n="proc.step4.desc">Your site goes live with full QA, then we stay on as your dedicated technical partner.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Testimonials -->
+  <section class="testimonials-section" id="testimonials-section">
+    <div class="testimonials-container">
+      <span class="section-tag" data-i18n="testi.tag">Client Stories</span>
+      <h2 class="section-title" data-i18n="testi.title">Agencies that made the switch</h2>
+      <p class="section-subtitle" data-i18n="testi.subtitle">What real estate professionals say after working with us.</p>
+
+      <div class="testimonials-grid">
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#f5c842"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#f5c842"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#f5c842"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#f5c842"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#f5c842"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p class="testimonial-quote" data-i18n="testi.q1">"Our old website looked exactly like every other agency site. Since launching with Stayli, clients specifically mention the website as the reason they called us first."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">MW</div>
+            <div class="testimonial-author-info">
+              <span class="testimonial-name">Marcus Webb</span>
+              <span class="testimonial-role">CEO, Harbor Realty</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#f5c842"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#f5c842"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#f5c842"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#f5c842"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#f5c842"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p class="testimonial-quote" data-i18n="testi.q2">"Four weeks, constant communication, and the result exceeded everything I imagined. The process alone made it worth choosing Stayli over anyone else."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">SL</div>
+            <div class="testimonial-author-info">
+              <span class="testimonial-name">Sophia Lindqvist</span>
+              <span class="testimonial-role">Founder, Vantage Properties</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#f5c842"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#f5c842"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#f5c842"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#f5c842"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#f5c842"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p class="testimonial-quote" data-i18n="testi.q3">"Inquiry volume doubled in the first month. I didn't expect the design to have such a direct impact on business — but it did, and it keeps doing it."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">DF</div>
+            <div class="testimonial-author-info">
+              <span class="testimonial-name">Daniel Ferreira</span>
+              <span class="testimonial-role">Managing Director, Meridian Group</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Services / What's Included -->
+  <section class="services-section" id="services-section">
+    <div class="services-container">
+      <div class="services-header-row">
+        <div class="services-header-text">
+          <span class="section-tag" data-i18n="serv.tag">What's Included</span>
+          <h2 class="section-title" data-i18n="serv.title">Everything your agency needs</h2>
+          <p class="section-subtitle" data-i18n="serv.subtitle">One complete package — no plugins to juggle, no surprise extras.</p>
+          <a href="#" class="btn btn-primary" data-i18n="serv.cta">Start the conversation</a>
+        </div>
+        <div class="services-grid">
+          <div class="service-item">
+            <div class="service-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+            <div class="service-text">
+              <h3 class="service-title" data-i18n="serv.i1.title">Custom Visual Design</h3>
+              <p class="service-desc" data-i18n="serv.i1.desc">A unique concept built around your brand — never a template.</p>
+            </div>
+          </div>
+          <div class="service-item">
+            <div class="service-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+            <div class="service-text">
+              <h3 class="service-title" data-i18n="serv.i2.title">Property Listing System</h3>
+              <p class="service-desc" data-i18n="serv.i2.desc">Search, smart filters, and a dedicated page for every listing.</p>
+            </div>
+          </div>
+          <div class="service-item">
+            <div class="service-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+            <div class="service-text">
+              <h3 class="service-title" data-i18n="serv.i3.title">Inquiry &amp; Lead Tools</h3>
+              <p class="service-desc" data-i18n="serv.i3.desc">WhatsApp and Viber integration, clean inquiry dashboard.</p>
+            </div>
+          </div>
+          <div class="service-item">
+            <div class="service-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+            <div class="service-text">
+              <h3 class="service-title" data-i18n="serv.i4.title">Full SEO Setup</h3>
+              <p class="service-desc" data-i18n="serv.i4.desc">Technical SEO, structured data, and meta tags built in from day one.</p>
+            </div>
+          </div>
+          <div class="service-item">
+            <div class="service-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+            <div class="service-text">
+              <h3 class="service-title" data-i18n="serv.i5.title">Mobile Optimised</h3>
+              <p class="service-desc" data-i18n="serv.i5.desc">Pixel-perfect on every device — desktop, tablet, and phone.</p>
+            </div>
+          </div>
+          <div class="service-item">
+            <div class="service-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+            <div class="service-text">
+              <h3 class="service-title" data-i18n="serv.i6.title">Ongoing Support</h3>
+              <p class="service-desc" data-i18n="serv.i6.desc">We stay on as your technical partner after launch — not a handoff.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section" id="cta-section">
+    <div class="cta-glow"></div>
+    <div class="cta-container">
+      <span class="section-tag" data-i18n="cta.tag">Get Started</span>
+      <h2 class="cta-title" data-i18n="cta.title">Ready to stand out?</h2>
+      <p class="cta-subtitle" data-i18n="cta.subtitle">Tell us about your agency and we'll show you what a site built around your brand looks like.</p>
+      <a href="#" class="btn btn-cta" data-i18n="cta.btn">Start the conversation</a>
+      <p class="cta-note" data-i18n="cta.note">No commitment. We'll send you a short questionnaire and take it from there.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <svg class="logo-icon" width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="16" cy="16" r="11" stroke="white" stroke-width="2.5"/>
+              <path d="M16 5.5C10.201 5.5 5.5 10.201 5.5 16C5.5 21.799 10.201 26.5 16 26.5V5.5Z" fill="white"/>
+            </svg>
+            <span class="logo-text">Stayli</span>
+          </a>
+          <p class="footer-tagline" data-i18n="foot.tagline">World-class websites<br>for real estate agencies.</p>
+        </div>
+        <nav class="footer-nav">
+          <ul>
+            <li><a href="#" class="footer-nav-link" data-i18n="nav.home">Home</a></li>
+            <li><a href="#" class="footer-nav-link" data-i18n="nav.portfolio">Portfolio</a></li>
+            <li><a href="#" class="footer-nav-link" data-i18n="nav.services">Services</a></li>
+            <li><a href="#" class="footer-nav-link" data-i18n="nav.process">Process</a></li>
+            <li><a href="#" class="footer-nav-link" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy" data-i18n="foot.copy">© 2025 Stayli. All rights reserved.</p>
+        <p class="footer-made" data-i18n="foot.made">Built with intention, not a template.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js?v=1.7"></script>
+</body>
+</html>
