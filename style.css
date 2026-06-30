@@ -1132,6 +1132,19 @@ h1, h2, h3, h4, h5, h6 {
   gap: 14px;
 }
 
+.browser-body.has-image {
+  padding: 0;
+}
+
+.mockup-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+}
+
+
 .mock-nav {
   display: flex;
   align-items: center;
