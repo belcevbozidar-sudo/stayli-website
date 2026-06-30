@@ -1134,6 +1134,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .browser-body.has-image {
   padding: 0;
+  height: auto !important;
+  aspect-ratio: 1024 / 576;
 }
 
 .mockup-img {
