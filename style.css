@@ -1630,6 +1630,21 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(255, 255, 255, 0.025);
 }
 
+.service-item.featured {
+  grid-column: span 2;
+  background: rgba(59, 130, 246, 0.04);
+}
+
+.service-item.featured:hover {
+  background: rgba(59, 130, 246, 0.08);
+}
+
+@media (max-width: 768px) {
+  .service-item.featured {
+    grid-column: span 1;
+  }
+}
+
 .service-check {
   flex-shrink: 0;
   width: 28px;

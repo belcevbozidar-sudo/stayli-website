@@ -111,6 +111,8 @@ document.addEventListener('DOMContentLoaded', () => {
       'serv.promo'       : 'GIFT: 365 days hosting & support',
       'serv.promo_desc'  : 'Afterwards, renew hosting and support for just 200 € / year, only if you want us to keep managing everything.',
       'serv.cta'         : 'Claim Your Offer',
+      'serv.i0.title'    : 'Free Initial Demo',
+      'serv.i0.desc'     : 'We design and build a custom demo draft of your website completely free of charge before any payment, so you see the concept live.',
       'serv.i1.title'    : 'Unlimited Free Edits',
       'serv.i1.desc'     : 'Get completely free design and content edits throughout the entire year.',
       'serv.i2.title'    : 'Easy Admin Panel',
@@ -162,6 +164,8 @@ document.addEventListener('DOMContentLoaded', () => {
       'faq.a2'           : 'Yes, you get an extremely easy-to-use admin panel to add, edit, and remove properties with a few clicks.',
       'faq.q3'           : 'How is the website created?',
       'faq.a3'           : 'The website is developed using the latest AI models built specifically for coding. We use Claude Code and the most powerful Claude Opus 4.8 model for uncompromising speed and clean code.',
+      'faq.q4'           : 'How does the payment work?',
+      'faq.a4'           : 'Payments are made via bank transfer. To ensure your complete peace of mind, we create a free demo of your website first. If you love the design and concept, you pay a 50% deposit, and the remaining 50% is due only when the website is fully finished and you are 100% satisfied.',
     },
     bg: {
       'page.title'       : 'Premium Studio — Премиум Уебсайтове за Агенции за Недвижими Имоти',
@@ -229,6 +233,8 @@ document.addEventListener('DOMContentLoaded', () => {
       'serv.promo'       : 'ПОДАРЪК: 365 дни хостинг и поддръжка',
       'serv.promo_desc'  : 'След това подновяването струва само 200 € на година за хостинг, поддръжка и безпроблемна работа.',
       'serv.cta'         : 'Заявете Вашата оферта',
+      'serv.i0.title'    : 'Безплатно демо',
+      'serv.i0.desc'     : 'Изготвяме предварителен демо проект на Вашия сайт напълно безплатно, преди да платите каквото и да е било, за да видите концепцията на живо.',
       'serv.i1.title'    : 'Неограничени редакции',
       'serv.i1.desc'     : 'Получавате напълно безплатни корекции по дизайна и съдържанието през цялата година.',
       'serv.i2.title'    : 'Лесен админ панел',
@@ -280,6 +286,8 @@ document.addEventListener('DOMContentLoaded', () => {
       'faq.a2'           : 'Да, получавате изключително лесен за ползване административен панел, чрез който можете да добавяте, променяте и премахвате имоти и обяви с няколко клика.',
       'faq.q3'           : 'Как се създава сайта?',
       'faq.a3'           : 'Сайтът се разработва с помощта на най-новите модели изкуствен интелект (ИИ), създадени специално за програмиране. Използваме Claude Code и най-мощния модел Claude Opus 4.8 за безкомпромисна бързина и чист код.',
+      'faq.q4'           : 'Как става плащането?',
+      'faq.a4'           : 'Плащането се извършва по банков път. За Ваше пълно спокойствие, в самото начало изготвяме безплатно демо на Вашия сайт. Ако дизайнът и концепцията Ви харесат, се заплащат 50% авансово, а останалата половина — едва накрая, когато сайтът е напълно готов и Ви удовлетворява на 100%.',
     }
   };
 
