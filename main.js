@@ -373,16 +373,80 @@ document.addEventListener('DOMContentLoaded', () => {
   // ── Process line fill on scroll ───────────────────────────────────────────
   const lineFill = document.getElementById('process-line-fill');
   const procSec  = document.getElementById('process-section');
-  if (lineFill && procSec) {
-    new IntersectionObserver((entries, obs) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          const mobile = window.matchMedia('(max-width: 992px)').matches;
-          lineFill.style[mobile ? 'height' : 'width'] = '100%';
-          obs.unobserve(e.target);
+  const line     = document.querySelector('.process-line');
+  const steps    = document.querySelectorAll('.process-step');
+
+  if (lineFill && procSec && steps.length && line) {
+    const handleScroll = () => {
+      const rect = procSec.getBoundingClientRect();
+      const viewportHeight = window.innerHeight;
+
+      if (rect.top < viewportHeight && rect.bottom > 0) {
+        const isMobile = window.matchMedia('(max-width: 992px)').matches;
+
+        if (isMobile) {
+          // Adjust vertical line height on mobile to end exactly at the center of the last icon
+          const lastStep = steps[steps.length - 1];
+          line.style.height = `${lastStep.offsetTop}px`;
+          line.style.top = '24px';
+          line.style.left = '23px';
+          line.style.right = 'auto';
+          line.style.width = '2px';
+
+          // Animation range on mobile: from top of section entering screen center to bottom of section reaching screen center
+          const startScroll = viewportHeight * 0.75;
+          const endScroll = viewportHeight * 0.25;
+          let progress = (startScroll - rect.top) / (startScroll - endScroll);
+          progress = Math.max(0, Math.min(1, progress));
+
+          lineFill.style.width = '100%';
+          lineFill.style.height = `${progress * 100}%`;
+
+          // On mobile, light up steps as scroll progress reaches each step's vertical offset
+          steps.forEach((step, idx) => {
+            const stepRect = step.getBoundingClientRect();
+            // Active if the icon of the step has crossed the middle of the screen
+            if (stepRect.top < viewportHeight * 0.6) {
+              step.classList.add('active');
+            } else {
+              step.classList.remove('active');
+            }
+          });
+
+        } else {
+          // Reset styles to horizontal layout on desktop
+          line.style.height = '2px';
+          line.style.top = '24px';
+          line.style.left = '12.5%';
+          line.style.right = '12.5%';
+          line.style.width = 'auto';
+
+          // Animation range on desktop
+          const startScroll = viewportHeight * 0.8;
+          const endScroll = viewportHeight * 0.3;
+          let progress = (startScroll - rect.top) / (startScroll - endScroll);
+          progress = Math.max(0, Math.min(1, progress));
+
+          lineFill.style.height = '100%';
+          lineFill.style.width = `${progress * 100}%`;
+
+          // On desktop, activate steps sequentially based on overall progress
+          const thresholds = [0.05, 0.35, 0.65, 0.90];
+          steps.forEach((step, idx) => {
+            if (progress >= thresholds[idx]) {
+              step.classList.add('active');
+            } else {
+              step.classList.remove('active');
+            }
+          });
         }
-      });
-    }, { threshold: 0.3 }).observe(procSec);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    window.addEventListener('resize', handleScroll, { passive: true });
+    // Run once initially
+    setTimeout(handleScroll, 100);
   }
 
 });

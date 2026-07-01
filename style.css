@@ -1314,9 +1314,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .process-line {
   position: absolute;
-  top: 23px;
-  left: calc(12.5% - 1px);
-  right: calc(12.5% - 1px);
+  top: 24px;
+  left: 12.5%;
+  right: 12.5%;
   height: 2px;
   background: var(--color-border-subtle);
   z-index: 1;
@@ -1328,22 +1328,19 @@ h1, h2, h3, h4, h5, h6 {
   width: 0%;
   background: linear-gradient(to right, #3b82f6, #60a5fa);
   box-shadow: 0 0 12px rgba(59, 130, 246, 0.6);
-  transition: width 1.6s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: width 0.1s ease-out, height 0.1s ease-out;
 }
 
 .process-step {
   position: relative;
   z-index: 2;
-  text-align: left;
+  text-align: center;
 }
 
-/* Zigzag rhythm for visual interest on desktop */
-.process-step:nth-child(odd) {
-  transform: translateY(0);
-}
-
+/* Align desktop items in a single horizontal line */
+.process-step:nth-child(odd),
 .process-step:nth-child(even) {
-  transform: translateY(36px);
+  transform: translateY(0);
 }
 
 .process-number {
@@ -1365,15 +1362,17 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 22px;
+  margin: 0 auto 22px;
   transition: var(--transition-smooth);
 }
 
-.process-step:hover .process-icon-wrapper {
+.process-step:hover .process-icon-wrapper,
+.process-step.active .process-icon-wrapper {
   background: #3b82f6;
   color: #ffffff;
-  transform: scale(1.06);
-  box-shadow: 0 0 20px rgba(59, 130, 246, 0.4);
+  transform: scale(1.15);
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+  border-color: #60a5fa;
 }
 
 .process-step-title {
@@ -1400,36 +1399,41 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .process-line {
-    top: 0;
-    bottom: 0;
+    position: absolute;
+    top: 24px;
+    bottom: auto;
     left: 23px;
     right: auto;
     width: 2px;
-    height: auto;
+    height: 0;
+    background: var(--color-border-subtle);
   }
 
   .process-line-fill {
     width: 100%;
     height: 0%;
-    transition: height 1.6s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: none;
   }
 
   .process-step:nth-child(even),
   .process-step:nth-child(odd) {
     transform: none;
     padding-left: 64px;
+    text-align: left;
   }
 
   .process-icon-wrapper {
     position: absolute;
     top: 0;
     left: 0;
+    margin: 0;
   }
 
   .process-number {
     position: absolute;
     top: 14px;
     left: 64px;
+    margin: 0;
   }
 
   .process-step-title {
