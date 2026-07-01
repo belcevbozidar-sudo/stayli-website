@@ -313,7 +313,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ── Apply translations ────────────────────────────────────────────────────
-  let currentLang = localStorage.getItem('premium-studio-lang') || 'en';
+  let currentLang = localStorage.getItem('premium-studio-lang') || 'bg';
 
   function setLanguage(lang) {
     currentLang = lang;
