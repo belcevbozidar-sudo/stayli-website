@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">Благодарим Ви! — Premium Studio</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --color-dark: #050505;
+      --color-light: #ffffff;
+      --color-text-secondary: rgba(255, 255, 255, 0.55);
+      --color-card-border: rgba(255, 255, 255, 0.08);
+      --font-primary: 'Outfit', sans-serif;
+      --font-secondary: 'Manrope', sans-serif;
+    }
+    
+    html[lang="bg"] {
+      --font-primary: 'Manrope', sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--color-dark);
+      color: var(--color-light);
+      font-family: var(--font-secondary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 24px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* Ambient background glow */
+    .glow {
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(59, 130, 246, 0.08) 0%, rgba(59, 130, 246, 0) 70%);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .container {
+      max-width: 480px;
+      width: 100%;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.02);
+      border: 1px solid var(--color-card-border);
+      border-radius: 28px;
+      padding: 64px 40px;
+      backdrop-filter: blur(12px);
+      z-index: 2;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+      animation: slideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    @keyframes slideUp {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* SVG Checkmark Animation */
+    .checkmark {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      display: block;
+      stroke-width: 3.5;
+      stroke: #10b981;
+      stroke-miterlimit: 10;
+      box-shadow: inset 0px 0px 0px rgba(16, 185, 129, 0);
+      animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s;
+      margin: 0 auto 32px;
+    }
+
+    .checkmark__circle {
+      stroke-dasharray: 166;
+      stroke-dashoffset: 166;
+      stroke-width: 3.5;
+      stroke-miterlimit: 10;
+      stroke: #10b981;
+      fill: none;
+      animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+    }
+
+    .checkmark__check {
+      transform-origin: 50% 50%;
+      stroke-dasharray: 48;
+      stroke-dashoffset: 48;
+      stroke: #10b981;
+      animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.6s forwards;
+    }
+
+    @keyframes stroke {
+      100% {
+        stroke-dashoffset: 0;
+      }
+    }
+
+    @keyframes fill {
+      100% {
+        box-shadow: inset 0px 0px 0px 40px rgba(16, 185, 129, 0.08);
+      }
+    }
+
+    @keyframes scale {
+      0%, 100% {
+        transform: none;
+      }
+      50% {
+        transform: scale3d(1.1, 1.1, 1);
+      }
+    }
+
+    h1 {
+      font-family: var(--font-primary);
+      font-size: 32px;
+      font-weight: 500;
+      margin-bottom: 16px;
+      letter-spacing: -0.01em;
+    }
+
+    p {
+      color: var(--color-text-secondary);
+      font-size: 15px;
+      line-height: 1.6;
+      margin-bottom: 36px;
+    }
+
+    .btn-back {
+      background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+      border: 1px solid rgba(59, 130, 246, 0.4);
+      box-shadow: 0 4px 15px rgba(59, 130, 246, 0.25);
+      color: var(--color-light);
+      text-decoration: none;
+      font-family: var(--font-primary);
+      font-size: 14.5px;
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      padding: 14px 32px;
+      border-radius: 100px;
+    }
+
+    .btn-back:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(59, 130, 246, 0.45);
+      border-color: #60a5fa;
+    }
+
+    .btn-back:active {
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+  <div class="glow"></div>
+  
+  <div class="container">
+    <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+      <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
+      <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+    </svg>
+    
+    <h1 id="thank-you-title">Благодарим Ви!</h1>
+    <p id="thank-you-desc">Заявката Ви беше изпратена успешно. Ще се свържем с Вас съвсем скоро!</p>
+    
+    <a href="index.html" class="btn-back" id="back-btn">Обратно към сайта</a>
+  </div>
+
+  <script>
+    // Simple localization based on localStorage
+    const lang = localStorage.getItem('premium-studio-lang') || 'bg';
+    document.documentElement.lang = lang;
+    
+    const translations = {
+      en: {
+        pageTitle: 'Thank You! — Premium Studio',
+        title: 'Thank You!',
+        desc: 'Your request has been successfully submitted. We will get back to you shortly!',
+        btn: 'Back to Website'
+      },
+      bg: {
+        pageTitle: 'Благодарим Ви! — Premium Studio',
+        title: 'Благодарим Ви!',
+        desc: 'Заявката Ви беше изпратена успешно. Ще се свържем с Вас съвсем скоро!',
+        btn: 'Обратно към сайта'
+      }
+    };
+    
+    const t = translations[lang] || translations.bg;
+    
+    document.getElementById('page-title').textContent = t.pageTitle;
+    document.getElementById('thank-you-title').textContent = t.title;
+    document.getElementById('thank-you-desc').textContent = t.desc;
+    document.getElementById('back-btn').textContent = t.btn;
+  </script>
+</body>
+</html>

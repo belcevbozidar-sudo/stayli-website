@@ -630,7 +630,10 @@ document.addEventListener('DOMContentLoaded', () => {
         if (response.ok) {
           statusMsg.textContent = translations[currentLang]['popup.status.success'];
           statusMsg.className = 'form-status success';
-          setTimeout(closePopup, 2000);
+          setTimeout(() => {
+            closePopup();
+            window.location.href = 'thank-you.html';
+          }, 1000);
         } else {
           throw new Error('Telegram API error');
         }
