@@ -58,10 +58,11 @@ document.addEventListener('DOMContentLoaded', () => {
       'nav.feat.crm'     : 'Inquiry Forms',
       'nav.feat.seo'     : 'SEO Optimization',
       'nav.cta'          : 'Get started',
-      'hero.title'       : 'World-class websites for<br>real estate agencies',
-      'hero.subtitle'    : 'We craft high-end, bespoke digital experiences for premium property brands.<br>Attract luxury listings and convert buyers with award-winning design.',
+      'hero.title'       : 'A website that sells your properties — not just displays them',
+      'hero.subtitle'    : 'We build websites for real estate agencies that look professional, load instantly, and compel clients with real budgets to leave inquiries.',
       'hero.search_btn'  : 'Search',
       'feat.tag'         : 'Our Expertise',
+      'feat.cta'         : 'Get Started',
       'feat.title'       : 'Designed to win premium listings',
       'feat.subtitle'    : 'We equip your agency with high-performance features that outpace the competition and convert every visitor into an inquiry.',
       'feat.card1.title' : 'Design Unlike Any Other Agency',
@@ -93,36 +94,35 @@ document.addEventListener('DOMContentLoaded', () => {
       'proc.tag'         : 'How We Work',
       'proc.title'       : 'From your intake form to a live site in 2 weeks',
       'proc.subtitle'    : 'A streamlined, transparent process built for busy agency owners — no guesswork, no surprises.',
-      'proc.step1.title' : 'Tell Us About Your Agency',
-      'proc.step1.desc'  : 'Fill in our short intake form: describe your agency\'s style, the types of properties you focus on, your target clients, and your goals. We review everything in detail before reaching out.',
-      'proc.step2.title' : 'Bespoke Design',
-      'proc.step2.desc'  : 'We craft a unique visual concept around your brand identity — never a template — and walk you through every detail for feedback and refinement.',
-      'proc.step3.title' : 'Build & Refine',
-      'proc.step3.desc'  : 'We develop the full platform: listing pages, smart search, inquiry flows, and complete SEO setup — then fine-tune every detail until it\'s perfect.',
-      'proc.step4.title' : 'Launch & Support',
-      'proc.step4.desc'  : 'Your site goes live after thorough QA testing. We stay on as your dedicated technical partner for everything that follows.',
+      'proc.step1.title' : '1. Strategic Analysis',
+      'proc.step1.desc'  : 'We analyze your brand\'s vision, property segment, and target audience to define a clear direction for design and features.',
+      'proc.step2.title' : '2. Bespoke Design & Build',
+      'proc.step2.desc'  : 'We design a unique concept tailored to your brand identity and build the site with clean code and high performance.',
+      'proc.step3.title' : '3. Chatbot, Domain & Launch',
+      'proc.step3.desc'  : 'We connect an intelligent AI chatbot to help clients find properties, link your domain, and launch the platform live.',
       'testi.tag'        : 'Client Stories',
       'testi.title'      : 'Agencies that made the switch',
       'testi.subtitle'   : 'What real estate professionals say after working with us.',
       'testi.q1'         : '"Our old website looked exactly like every other agency site. Since launching with Stayli, clients specifically mention the website as the reason they called us first."',
       'testi.q2'         : '"Two weeks, constant communication, and the result exceeded everything I imagined. The process alone made it worth choosing Stayli over anyone else."',
       'testi.q3'         : '"Inquiry volume doubled in the first month. I didn\'t expect the design to have such a direct impact on business — but it did, and it keeps doing it."',
-      'serv.tag'         : "What's Included",
-      'serv.title'       : 'Everything your agency needs',
-      'serv.subtitle'    : 'One complete package — no plugins to juggle, no surprise extras.',
-      'serv.cta'         : 'Start the conversation',
-      'serv.i1.title'    : 'Custom Visual Design',
-      'serv.i1.desc'     : 'A unique concept built around your brand — never a template.',
-      'serv.i2.title'    : 'Property Listing System',
-      'serv.i2.desc'     : 'Search, smart filters, and a dedicated page for every listing.',
-      'serv.i3.title'    : 'Inquiry & Lead Tools',
-      'serv.i3.desc'     : 'WhatsApp and Viber integration, clean inquiry dashboard.',
-      'serv.i4.title'    : 'Full SEO Setup',
-      'serv.i4.desc'     : 'Technical SEO, structured data, and meta tags built in from day one.',
-      'serv.i5.title'    : 'Mobile Optimised',
-      'serv.i5.desc'     : 'Pixel-perfect on every device — desktop, tablet, and phone.',
-      'serv.i6.title'    : 'Ongoing Support',
-      'serv.i6.desc'     : 'We stay on as your technical partner after launch — not a handoff.',
+      'serv.tag'         : 'Bespoke Offer',
+      'serv.title'       : 'Complete platform. Clear price.',
+      'serv.promo'       : 'GIFT: 365 days hosting & support',
+      'serv.promo_desc'  : 'Afterwards, renew hosting and support for just 200 € / year, only if you want us to keep managing everything.',
+      'serv.cta'         : 'Claim Your Offer',
+      'serv.i1.title'    : 'Unlimited Free Edits',
+      'serv.i1.desc'     : 'Get completely free design and content edits throughout the entire year.',
+      'serv.i2.title'    : 'Easy Admin Panel',
+      'serv.i2.desc'     : 'Intuitive dashboard to easily add, edit, and manage your property listings.',
+      'serv.i3.title'    : 'Intelligent AI Chatbot',
+      'serv.i3.desc'     : 'AI chatbot that guides buyers to find properties and captures inquiries.',
+      'serv.i4.title'    : 'Technical SEO Setup',
+      'serv.i4.desc'     : 'Speed optimization, structured data, and meta tags for high Google rankings.',
+      'serv.i5.title'    : 'Hosting & Support',
+      'serv.i5.desc'     : '365 days of high-performance hosting and dedicated maintenance included.',
+      'serv.i6.title'    : 'Mobile Responsive',
+      'serv.i6.desc'     : 'Your platform runs and looks flawless on every smartphone, tablet, and desktop.',
       'cta.tag'          : 'Get Started',
       'cta.title'        : 'Ready to stand out?',
       'cta.subtitle'     : 'Tell us about your agency and we\'ll show you what a site built around your brand looks like.',
@@ -154,6 +154,14 @@ document.addEventListener('DOMContentLoaded', () => {
       'popup.status.sending': 'Sending your request...',
       'popup.status.success': 'Thank you! We will contact you shortly.',
       'popup.status.error': 'Something went wrong. Please try again or call us directly.',
+      'faq.tag'          : 'FAQ',
+      'faq.title'        : 'Frequently Asked Questions',
+      'faq.q1'           : 'Can I get an invoice?',
+      'faq.a1'           : 'Yes, we issue an official tax invoice for every payment.',
+      'faq.q2'           : 'Can I add listings myself?',
+      'faq.a2'           : 'Yes, you get an extremely easy-to-use admin panel to add, edit, and remove properties with a few clicks.',
+      'faq.q3'           : 'How is the website created?',
+      'faq.a3'           : 'The website is developed using the latest AI models built specifically for coding. We use Claude Code and the most powerful Claude Opus 4.8 model for uncompromising speed and clean code.',
     },
     bg: {
       'page.title'       : 'Premium Studio — Премиум Уебсайтове за Агенции за Недвижими Имоти',
@@ -168,10 +176,11 @@ document.addEventListener('DOMContentLoaded', () => {
       'nav.feat.crm'     : 'Запитвания и CRM',
       'nav.feat.seo'     : 'SEO Оптимизация',
       'nav.cta'          : 'Консултирайте се с нас',
-      'hero.title'       : 'Премиум уебсайтове за имотни агенции',
-      'hero.subtitle'    : 'Изграждаме персонализирани дигитални платформи за водещи имотни брандове.<br>Привличайте луксозни клиенти и правете повече сделки с дизайн, който спира погледа.',
+      'hero.title'       : 'Сайт, който продава имотите ви - не просто ги показва',
+      'hero.subtitle'    : 'Правим уебсайтове за имотни агенции в България, които изглеждат сериозно, зареждат бързо и карат хората с реален бюджет да оставят запитване',
       'hero.search_btn'  : 'Търси',
       'feat.tag'         : 'Какво правим',
+      'feat.cta'         : 'Започнете сега',
       'feat.title'       : 'Дизайн, създаден за спечелване на ексклузивни мандати',
       'feat.subtitle'    : 'Предоставяме на Вашата агенция технологични предимства, които Ви отличават на пазара и превръщат посетителите в реални клиенти.',
       'feat.card1.title' : 'Индивидуален дизайн без аналог',
@@ -204,35 +213,34 @@ document.addEventListener('DOMContentLoaded', () => {
       'proc.title'       : 'От първия разговор до готов сайт за 2 седмици',
       'proc.subtitle'    : 'Секвениран и оптимизиран процес, създаден за натоварени бизнес собственици – без усложнения, без закъснения.',
       'proc.step1.title' : '1. Стратегически анализ',
-      'proc.step1.desc'  : 'Анализираме визията на Вашия бранд, сегмента на имотите и Вашата целева аудитория чрез кратък въпросник, за да определим ясната посока.',
-      'proc.step2.title' : '2. Индивидуален дизайн',
-      'proc.step2.desc'  : 'Проектираме авторска концепция, съобразена изцяло с идентичността на Вашата агенция, и я обсъждаме стъпка по стъпка.',
-      'proc.step3.title' : '3. Разработка и интеграция',
-      'proc.step3.desc'  : 'Изграждаме платформата, интегрираме имотните каталози, филтри, CRM системи и извършваме професионално SEO планиране.',
-      'proc.step4.title' : '4. Лонч и поддръжка',
-      'proc.step4.desc'  : 'Стартираме Вашия уебсайт след подробни тестове и оставаме Ваш постоянен технологичен партньор за поддръжка и развитие.',
+      'proc.step1.desc'  : 'Анализираме визията на Вашия бранд, сегмента на имотите и целевата Ви аудитория, за да определим ясната посока за дизайн и функционалност.',
+      'proc.step2.title' : '2. Индивидуален дизайн и изработка',
+      'proc.step2.desc'  : 'Създаваме авторска концепция, съобразена изцяло с идентичността на Вашата агенция, и изграждаме сайта с бързо зареждане и интуитивни филтри.',
+      'proc.step3.title' : '3. Чатбот, домейн и стартиране',
+      'proc.step3.desc'  : 'Свързваме интелигентен чатбот към сайта, който помага на клиентите с избора на имот, свързваме Вашия домейн и пускаме сайта на живо.',
       'testi.tag'        : 'Отзиви',
       'testi.title'      : 'Какво казват партньорите ни',
       'testi.subtitle'   : 'Мнения на професионалисти след съвместната ни работа.',
       'testi.q1'         : '„Предишният ни сайт изглеждаше като на всяка друга агенция. С новата платформа Stayli клиентите започнаха изрично да споменават уебсайта като ключов фактор за доверието им към нас.“',
       'testi.q2'         : '„Две седмици, пълна прозрачност в комуникацията и резултат, който надмина очакванията ни. Процесът на Stayli е бърз и изключително професионален.“',
       'testi.q3'         : '„Запитванията за имоти нараснаха двойно още през първия месец. Инвестицията в индивидуален дизайн се възвърна изключително бързо.“',
-      'serv.tag'         : 'Какво включва услугата',
-      'serv.title'       : 'Всичко необходимо за Вашата агенция',
-      'serv.subtitle'    : 'Цялостен дигитален пакет от край до край – без нужда от външни плъгини и без скрити разходи.',
-      'serv.cta'         : 'Свържете се с нас',
-      'serv.i1.title'    : 'Индивидуален визуален дизайн',
-      'serv.i1.desc'     : 'Уникален интерфейс, разработен специално за Вашия бранд – без използване на готови шаблони.',
-      'serv.i2.title'    : 'Управление на каталога от имоти',
-      'serv.i2.desc'     : 'Бързо търсене, интерактивни филтри и детайлни, представителни продуктови страници за всеки имот.',
-      'serv.i3.title'    : 'Оптимизация на запитванията',
-      'serv.i3.desc'     : 'Интегрирани канали за връзка през WhatsApp и Viber, директно свързани с Вашата CRM система.',
-      'serv.i4.title'    : 'Цялостна техническа SEO оптимизация',
-      'serv.i4.desc'     : 'Структуриран и чист код, подготвен за отлично класиране в търсачката на Google от първия ден.',
-      'serv.i5.title'    : 'Пълна мобилна съвместимост',
-      'serv.i5.desc'     : 'Безпрепятствена работа и перфектна визуализация на десктоп, таблети и смартфони.',
-      'serv.i6.title'    : 'Професионална поддръжка',
-      'serv.i6.desc'     : 'Оставаме до Вас като технически съветник и партньор за последващи актуализации и сигурност.',
+      'serv.tag'         : 'Цялостна Оферта',
+      'serv.title'       : 'Пълна платформа. Ясна цена.',
+      'serv.promo'       : 'ПОДАРЪК: 365 дни хостинг и поддръжка',
+      'serv.promo_desc'  : 'След това подновяването струва само 200 € на година за хостинг, поддръжка и безпроблемна работа.',
+      'serv.cta'         : 'Заявете Вашата оферта',
+      'serv.i1.title'    : 'Неограничени редакции',
+      'serv.i1.desc'     : 'Получавате напълно безплатни корекции по дизайна и съдържанието през цялата година.',
+      'serv.i2.title'    : 'Лесен админ панел',
+      'serv.i2.desc'     : 'Интуитивна система за лесно добавяне, редакция и управление на Вашите обяви с няколко клика.',
+      'serv.i3.title'    : 'Интелигентен чатбот',
+      'serv.i3.desc'     : 'ИИ асистент, който помага на купувачите с избора на имот и улавя контактите им.',
+      'serv.i4.title'    : 'Професионално SEO',
+      'serv.i4.desc'     : 'Оптимизация на скоростта, структурирани данни и мета тагове за предни позиции в Google.',
+      'serv.i5.title'    : 'Хостинг и поддръжка',
+      'serv.i5.desc'     : '365 дни безплатен хостинг от най-висок клас и постоянна техническа грижа от наша страна.',
+      'serv.i6.title'    : 'Мобилна съвместимост',
+      'serv.i6.desc'     : 'Уебсайтът работи и изглежда перфектно на всеки смартфон, таблет и десктоп.',
       'cta.tag'          : 'Следваща стъпка',
       'cta.title'        : 'Готови ли сте да се отличите на пазара?',
       'cta.subtitle'     : 'Споделете Вашата бизнес визия и ние ще Ви предложим концепция за уебсайт, която отговаря на амбициите Ви.',
@@ -264,6 +272,14 @@ document.addEventListener('DOMContentLoaded', () => {
       'popup.status.sending': 'Изпращане на запитването...',
       'popup.status.success': 'Благодарим Ви! Ще се свържем с Вас съвсем скоро.',
       'popup.status.error': 'Възникна грешка. Моля, опитайте отново или се свържете директно по телефон.',
+      'faq.tag'          : 'ЧЗВ',
+      'faq.title'        : 'Често задавани въпроси',
+      'faq.q1'           : 'Мога ли да получа фактура?',
+      'faq.a1'           : 'Да, издаваме официална данъчна фактура за всяко плащане.',
+      'faq.q2'           : 'Мога ли сам да добавям обяви?',
+      'faq.a2'           : 'Да, получавате изключително лесен за ползване административен панел, чрез който можете да добавяте, променяте и премахвате имоти и обяви с няколко клика.',
+      'faq.q3'           : 'Как се създава сайта?',
+      'faq.a3'           : 'Сайтът се разработва с помощта на най-новите модели изкуствен интелект (ИИ), създадени специално за програмиране. Използваме Claude Code и най-мощния модел Claude Opus 4.8 за безкомпромисна бързина и чист код.',
     }
   };
 
@@ -469,8 +485,8 @@ document.addEventListener('DOMContentLoaded', () => {
           // Reset styles to horizontal layout on desktop
           line.style.height = '2px';
           line.style.top = '24px';
-          line.style.left = '12.5%';
-          line.style.right = '12.5%';
+          line.style.left = '16.66%';
+          line.style.right = '16.66%';
           line.style.width = 'auto';
 
           // Animation range on desktop
@@ -483,7 +499,7 @@ document.addEventListener('DOMContentLoaded', () => {
           lineFill.style.width = `${progress * 100}%`;
 
           // On desktop, activate steps sequentially based on overall progress
-          const thresholds = [0.05, 0.35, 0.65, 0.90];
+          const thresholds = [0.05, 0.45, 0.85];
           steps.forEach((step, idx) => {
             if (progress >= thresholds[idx]) {
               step.classList.add('active');
@@ -563,7 +579,8 @@ document.addEventListener('DOMContentLoaded', () => {
     '#mobile-get-started-btn',
     '#search-submit-btn',
     '.btn[data-i18n="serv.cta"]',
-    '.btn[data-i18n="cta.btn"]'
+    '.btn[data-i18n="cta.btn"]',
+    '#features-cta-btn'
   ];
 
   ctaSelectors.forEach(selector => {
@@ -625,5 +642,32 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
+
+  // FAQ Accordion logic
+  document.querySelectorAll('.faq-question').forEach(button => {
+    button.addEventListener('click', () => {
+      const wrapper = button.nextElementSibling;
+      const item = button.parentElement;
+      const icon = button.querySelector('.faq-icon');
+      
+      const isOpen = item.classList.contains('active');
+      
+      // Close all other FAQ items
+      document.querySelectorAll('.faq-item').forEach(otherItem => {
+        otherItem.classList.remove('active');
+        const otherWrapper = otherItem.querySelector('.faq-answer-wrapper');
+        if (otherWrapper) otherWrapper.style.height = '0';
+        const otherIcon = otherItem.querySelector('.faq-icon');
+        if (otherIcon) otherIcon.style.transform = 'rotate(0deg)';
+      });
+      
+      if (!isOpen) {
+        item.classList.add('active');
+        const scrollHeight = wrapper.querySelector('.faq-answer').scrollHeight;
+        wrapper.style.height = (scrollHeight + 24) + 'px'; // include padding offset
+        if (icon) icon.style.transform = 'rotate(45deg)';
+      }
+    });
+  });
 
 });
