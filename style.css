@@ -1209,6 +1209,10 @@ h1, h2, h3, h4, h5, h6 {
 .theme-rose .mock-hero { background: linear-gradient(135deg, #fb7185, #8a2740); }
 .theme-rose .mock-grid span { background: rgba(251, 113, 133, 0.16); }
 
+.theme-emerald .browser-url { color: #34d399; }
+.theme-emerald .mock-hero { background: linear-gradient(135deg, #34d399, #064e3b); }
+.theme-emerald .mock-grid span { background: rgba(52, 211, 153, 0.16); }
+
 .portfolio-meta {
   padding: 20px 4px 0;
 }
