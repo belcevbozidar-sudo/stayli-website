@@ -2216,3 +2216,34 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 15px;
   line-height: 1.65;
 }
+
+/* ==========================================================================
+   Glowing CTA Buttons
+   ========================================================================== */
+.btn-cta-glow {
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+  border: 1px solid rgba(59, 130, 246, 0.4);
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.25);
+  color: var(--color-light);
+  text-decoration: none;
+  font-family: var(--font-primary);
+  font-size: 14.5px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  padding: 14px 28px;
+  border-radius: 100px;
+}
+
+.btn-cta-glow:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.45);
+  border-color: #60a5fa;
+  color: var(--color-light);
+}
+
+.btn-cta-glow:active {
+  transform: translateY(0);
+}

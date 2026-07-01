@@ -59,10 +59,10 @@ document.addEventListener('DOMContentLoaded', () => {
       'nav.feat.seo'     : 'SEO Optimization',
       'nav.cta'          : 'Get started',
       'hero.title'       : 'A website that sells your properties — not just displays them',
-      'hero.subtitle'    : 'We build websites for real estate agencies that look professional, load instantly, and compel clients with real budgets to leave inquiries.',
+      'hero.subtitle'    : 'If you are a real estate agency, you can benefit from a website that will set you apart from all other agencies on the market.',
       'hero.search_btn'  : 'Search',
       'feat.tag'         : 'Our Expertise',
-      'feat.cta'         : 'Get Started',
+      'feat.cta'         : 'View the Offer',
       'feat.title'       : 'Designed to win premium listings',
       'feat.subtitle'    : 'We equip your agency with high-performance features that outpace the competition and convert every visitor into an inquiry.',
       'feat.card1.title' : 'Design Unlike Any Other Agency',
@@ -177,10 +177,10 @@ document.addEventListener('DOMContentLoaded', () => {
       'nav.feat.seo'     : 'SEO Оптимизация',
       'nav.cta'          : 'Консултирайте се с нас',
       'hero.title'       : 'Сайт, който продава имотите ви - не просто ги показва',
-      'hero.subtitle'    : 'Правим уебсайтове за имотни агенции в България, които изглеждат сериозно, зареждат бързо и карат хората с реален бюджет да оставят запитване',
+      'hero.subtitle'    : 'Ако си агенция за недвижими имоти, можеш да се възползваш от сайт, който ще те открои от всички останали агенции на пазара.',
       'hero.search_btn'  : 'Търси',
       'feat.tag'         : 'Какво правим',
-      'feat.cta'         : 'Започнете сега',
+      'feat.cta'         : 'Виж офертата',
       'feat.title'       : 'Дизайн, създаден за спечелване на ексклузивни мандати',
       'feat.subtitle'    : 'Предоставяме на Вашата агенция технологични предимства, които Ви отличават на пазара и превръщат посетителите в реални клиенти.',
       'feat.card1.title' : 'Индивидуален дизайн без аналог',
@@ -579,8 +579,7 @@ document.addEventListener('DOMContentLoaded', () => {
     '#mobile-get-started-btn',
     '#search-submit-btn',
     '.btn[data-i18n="serv.cta"]',
-    '.btn[data-i18n="cta.btn"]',
-    '#features-cta-btn'
+    '.btn[data-i18n="cta.btn"]'
   ];
 
   ctaSelectors.forEach(selector => {
