@@ -128,6 +128,12 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -0.02em;
 }
 
+.logo-img {
+  height: 32px;
+  width: auto;
+  display: block;
+}
+
 .logo:hover {
   opacity: 0.95;
 }
@@ -1847,4 +1853,292 @@ h1, h2, h3, h4, h5, h6 {
   .footer-top { flex-direction: column; gap: 28px; margin-bottom: 40px; }
   .footer-nav ul { gap: 18px; }
   .footer-bottom { flex-direction: column; align-items: flex-start; gap: 6px; }
+}
+
+/* ==========================================================================
+   About Us Section
+   ========================================================================== */
+.about-section {
+  background-color: var(--color-dark);
+  border-top: 1px solid var(--color-border-subtle);
+  padding: 140px 24px;
+  position: relative;
+  z-index: 10;
+}
+
+.about-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  margin-top: 64px;
+}
+
+.about-card {
+  background-color: var(--color-card-bg);
+  border: 1px solid var(--color-card-border);
+  border-radius: 20px;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  text-align: left;
+  transition: var(--transition-smooth);
+}
+
+.about-card:hover {
+  border-color: #3b82f6;
+  box-shadow: 0 10px 30px rgba(59, 130, 246, 0.08);
+}
+
+.about-avatar-wrapper {
+  width: 180px;
+  height: 220px;
+  border-radius: 16px;
+  overflow: hidden;
+  flex-shrink: 0;
+  border: 1px solid var(--color-card-border);
+}
+
+.about-avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.about-meta {
+  flex-grow: 1;
+}
+
+.about-role-tag {
+  display: inline-block;
+  font-family: var(--font-primary);
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 6px 12px;
+  background: rgba(59, 130, 246, 0.1);
+  color: #3b82f6;
+  border-radius: 100px;
+  margin-bottom: 16px;
+}
+
+.about-meta h3 {
+  font-family: var(--font-primary);
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--color-light);
+  margin-bottom: 12px;
+}
+
+.about-member-desc {
+  font-family: var(--font-secondary);
+  font-size: 14.5px;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+@media (max-width: 992px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-section {
+    padding: 90px 20px;
+  }
+  .about-card {
+    flex-direction: column;
+    padding: 30px 24px;
+    gap: 24px;
+    align-items: center;
+    text-align: center;
+  }
+  .about-avatar-wrapper {
+    width: 160px;
+    height: 200px;
+  }
+}
+
+/* ==========================================================================
+   Popup Contact Form
+   ========================================================================== */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(5, 5, 5, 0.85);
+  backdrop-filter: blur(8px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.popup-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.popup-container {
+  background-color: var(--color-card-bg);
+  border: 1px solid var(--color-card-border);
+  border-radius: 24px;
+  width: 100%;
+  max-width: 480px;
+  padding: 44px;
+  position: relative;
+  transform: translateY(20px);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.popup-overlay.active .popup-container {
+  transform: translateY(0);
+}
+
+.popup-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  background: none;
+  border: none;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-fast);
+}
+
+.popup-close:hover {
+  background-color: rgba(255, 255, 255, 0.06);
+  color: var(--color-light);
+}
+
+.popup-title {
+  font-family: var(--font-primary);
+  font-size: 28px;
+  font-weight: 500;
+  color: var(--color-light);
+  margin-bottom: 8px;
+  letter-spacing: -0.01em;
+}
+
+.popup-subtitle {
+  font-family: var(--font-secondary);
+  font-size: 14.5px;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+.popup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: left;
+}
+
+.form-group label {
+  font-family: var(--font-primary);
+  font-size: 13.5px;
+  font-weight: 500;
+  color: var(--color-light);
+}
+
+.form-group input[type="text"],
+.form-group input[type="tel"] {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--color-card-border);
+  border-radius: 12px;
+  padding: 14px 16px;
+  color: var(--color-light);
+  font-family: var(--font-secondary);
+  font-size: 14.5px;
+  transition: var(--transition-fast);
+}
+
+.form-group input:focus {
+  border-color: #3b82f6;
+  background-color: rgba(255, 255, 255, 0.05);
+  outline: none;
+}
+
+.site-toggle-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 4px;
+}
+
+.site-toggle-btn {
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--color-card-border);
+  border-radius: 12px;
+  padding: 12px 0;
+  color: var(--color-text-secondary);
+  font-family: var(--font-primary);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.site-toggle-btn.active {
+  background-color: rgba(59, 130, 246, 0.1);
+  border-color: #3b82f6;
+  color: #3b82f6;
+  box-shadow: 0 0 12px rgba(59, 130, 246, 0.15);
+}
+
+.site-toggle-btn:hover:not(.active) {
+  background-color: rgba(255, 255, 255, 0.06);
+  color: var(--color-light);
+}
+
+.form-status {
+  font-family: var(--font-secondary);
+  font-size: 13.5px;
+  line-height: 1.5;
+  margin: 0;
+  text-align: center;
+}
+
+.form-status.success {
+  color: #10b981;
+}
+
+.form-status.error {
+  color: #ef4444;
+}
+
+@media (max-width: 576px) {
+  .popup-container {
+    padding: 36px 24px;
+    max-width: calc(100% - 32px);
+    border-radius: 20px;
+  }
 }

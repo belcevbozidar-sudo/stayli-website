@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // ── Translations ──────────────────────────────────────────────────────────
   const translations = {
     en: {
-      'page.title'       : 'Stayli — World-Class Websites for Real Estate Agencies',
+      'page.title'       : 'Premium Studio — World-Class Websites for Real Estate Agencies',
       'nav.home'         : 'Home',
       'nav.portfolio'    : 'Portfolio',
       'nav.services'     : 'Services',
@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
       'feat.card3.title' : 'Lead Capture & Inquiry Flows',
       'feat.card3.desc'  : 'High-converting inquiry forms with WhatsApp and Viber integration — every lead lands in one clean, organised inbox, ready to act on.',
       'feat.card3.link'  : 'Explore Lead Tools',
-      'trust.label'      : 'Agencies that chose Stayli',
+      'trust.label'      : 'Agencies that chose Premium Studio',
       'trust.stat1'      : 'Agencies launched',
       'trust.stat2'      : 'Avg. inquiry increase',
       'trust.stat3'      : 'Client retention rate',
@@ -129,11 +129,32 @@ document.addEventListener('DOMContentLoaded', () => {
       'cta.btn'          : 'Start the conversation',
       'cta.note'         : 'No commitment. We\'ll send you a short questionnaire and take it from there.',
       'foot.tagline'     : 'World-class websites for real estate agencies.',
-      'foot.copy'        : '© 2025 Stayli. All rights reserved.',
+      'foot.copy'        : '© 2025 Premium Studio. All rights reserved.',
       'foot.made'        : 'Built with intention, not a template.',
+      'nav.about'        : 'About Us',
+      'about.tag'        : 'Who is behind your results',
+      'about.title'      : 'The Faces Behind Premium Studio',
+      'about.subtitle'   : 'We are not a large, slow agency with anonymous managers. We work directly with you, shoulder to shoulder, to turn your agency\'s site into a digital experience that wins loyal clients.',
+      'about.role1'      : 'Design & Development',
+      'about.role2'      : 'Copywriting & Strategy',
+      'about.member1.desc': 'Focused on creating exceptionally fast, modern, and intuitive interfaces that grab attention from the first second and work flawlessly on any device.',
+      'about.member2.desc': 'Responsible for the correct structure of information, business logic, and clear formulation of your messaging, so that visitors quickly grant you full trust.',
+      'popup.title'      : 'Request a Consultation',
+      'popup.subtitle'   : 'Let\'s discuss how we can elevate your real estate brand online.',
+      'popup.label.agency': 'Agency Name',
+      'popup.placeholder.agency': 'e.g. Premium Properties',
+      'popup.label.has_site': 'Do you have a current website?',
+      'popup.btn.yes'    : 'Yes',
+      'popup.btn.no'     : 'No',
+      'popup.label.phone': 'Contact Phone Number',
+      'popup.placeholder.phone': 'e.g. +359 888 888 888',
+      'popup.btn.submit' : 'Send Request',
+      'popup.status.sending': 'Sending your request...',
+      'popup.status.success': 'Thank you! We will contact you shortly.',
+      'popup.status.error': 'Something went wrong. Please try again or call us directly.',
     },
     bg: {
-      'page.title'       : 'Stayli — Премиум Уебсайтове за Агенции за Недвижими Имоти',
+      'page.title'       : 'Premium Studio — Премиум Уебсайтове за Агенции за Недвижими Имоти',
       'nav.home'         : 'Начало',
       'nav.portfolio'    : 'Портфолио',
       'nav.services'     : 'Услуги',
@@ -216,8 +237,29 @@ document.addEventListener('DOMContentLoaded', () => {
       'cta.btn'          : 'Заявете безплатна консултация',
       'cta.note'         : 'Без никакво обвързване. Изпращаме Ви кратък въпросник и започваме оттам.',
       'foot.tagline'     : 'Дигитални платформи от най-висок клас за агенции за недвижими имоти.',
-      'foot.copy'        : '© 2025 Stayli. Всички права запазени.',
+      'foot.copy'        : '© 2025 Premium Studio. Всички права запазени.',
       'foot.made'        : 'Разработено с фокус върху марката, без готови шаблони.',
+      'nav.about'        : 'За нас',
+      'about.tag'        : 'Кой стои зад вашите резултати',
+      'about.title'      : 'Лицата зад Premium Studio',
+      'about.subtitle'   : 'Не сме голяма, тромава агенция с анонимни мениджъри. Работим директно с вас, рамо до рамо, за да превърнем бизнеса ви в дигитално изживяване, което печели лоялни клиенти.',
+      'about.role1'      : 'Дизайн и разработка',
+      'about.role2'      : 'Копирайтинг и стратегия',
+      'about.member1.desc': 'Фокусиран върху създаването на изключително бързи, модерни и интуитивни интерфейси, които грабват вниманието от първата секунда и работят безупречно на всяко устройство.',
+      'about.member2.desc': 'Отговаря за правилната подредба на информацията, бизнес логиката и ясното формулиране на вашите послания, така че посетителите бързо да ви гласуват пълно доверие.',
+      'popup.title'      : 'Заявете консултация',
+      'popup.subtitle'   : 'Нека обсъдим как да изградим уебсайт, който печели доверие и нови сделки за Вашата агенция.',
+      'popup.label.agency': 'Име на агенцията',
+      'popup.placeholder.agency': 'напр. Премиум Имоти',
+      'popup.label.has_site': 'Имате ли настоящ уебсайт?',
+      'popup.btn.yes'    : 'Да',
+      'popup.btn.no'     : 'Не',
+      'popup.label.phone': 'Телефонен номер за връзка',
+      'popup.placeholder.phone': 'напр. +359 888 888 888',
+      'popup.btn.submit' : 'Изпрати запитване',
+      'popup.status.sending': 'Изпращане на запитването...',
+      'popup.status.success': 'Благодарим Ви! Ще се свържем с Вас съвсем скоро.',
+      'popup.status.error': 'Възникна грешка. Моля, опитайте отново или се свържете директно по телефон.',
     }
   };
 
@@ -271,11 +313,11 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ── Apply translations ────────────────────────────────────────────────────
-  let currentLang = localStorage.getItem('stayli-lang') || 'en';
+  let currentLang = localStorage.getItem('premium-studio-lang') || 'en';
 
   function setLanguage(lang) {
     currentLang = lang;
-    localStorage.setItem('stayli-lang', lang);
+    localStorage.setItem('premium-studio-lang', lang);
     document.documentElement.lang = lang;
 
     // Switch heading font: Manrope has full Cyrillic; Outfit is Latin-only
@@ -293,6 +335,12 @@ document.addEventListener('DOMContentLoaded', () => {
       const key = el.dataset.i18n;
       if (t[key] === undefined) return;
       htmlKeys.has(key) ? (el.innerHTML = t[key]) : (el.textContent = t[key]);
+    });
+
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+      const key = el.dataset.i18nPlaceholder;
+      if (t[key] === undefined) return;
+      el.placeholder = t[key];
     });
 
     const langLabel = document.getElementById('lang-current');
@@ -447,6 +495,130 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('resize', handleScroll, { passive: true });
     // Run once initially
     setTimeout(handleScroll, 100);
+  }
+
+  // ── Contact Popup Form & Telegram Integration ─────────────────────────────
+  const popup = document.getElementById('contact-popup');
+  const closeBtn = document.getElementById('popup-close-btn');
+  const form = document.getElementById('telegram-contact-form');
+  const hasSiteInput = document.getElementById('has-site-value');
+  const statusMsg = document.getElementById('form-status-msg');
+  const toggleButtons = document.querySelectorAll('.site-toggle-btn');
+
+  // Toggle buttons logic (Yes/No)
+  toggleButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      toggleButtons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      hasSiteInput.value = btn.dataset.value;
+    });
+  });
+
+  // Open Popup function
+  const openPopup = (e) => {
+    if (e) e.preventDefault();
+    if (popup) {
+      popup.classList.add('active');
+      document.body.style.overflow = 'hidden'; // prevent page scroll behind popup
+    }
+  };
+
+  // Close Popup function
+  const closePopup = () => {
+    if (popup) {
+      popup.classList.remove('active');
+      document.body.style.overflow = '';
+      if (form) form.reset();
+      if (statusMsg) {
+        statusMsg.textContent = '';
+        statusMsg.className = 'form-status';
+      }
+      // reset toggle buttons
+      toggleButtons.forEach(b => b.classList.remove('active'));
+      const yesBtn = document.querySelector('.site-toggle-btn[data-value="yes"]');
+      if (yesBtn) yesBtn.classList.add('active');
+      if (hasSiteInput) hasSiteInput.value = 'yes';
+    }
+  };
+
+  if (closeBtn) {
+    closeBtn.addEventListener('click', closePopup);
+  }
+
+  // Close popup on background click
+  if (popup) {
+    popup.addEventListener('click', e => {
+      if (e.target === popup) closePopup();
+    });
+  }
+
+  // Bind to all CTA buttons
+  // Get started buttons in header/mobile nav, services CTA, and footer CTA section
+  const ctaSelectors = [
+    '#get-started-btn',
+    '#mobile-get-started-btn',
+    '#search-submit-btn',
+    '.btn[data-i18n="serv.cta"]',
+    '.btn[data-i18n="cta.btn"]'
+  ];
+
+  ctaSelectors.forEach(selector => {
+    const el = document.querySelector(selector);
+    if (el) {
+      el.addEventListener('click', openPopup);
+    }
+  });
+
+  // Telegram submit integration
+  if (form) {
+    form.addEventListener('submit', async e => {
+      e.preventDefault();
+
+      const agencyName = document.getElementById('agency-name').value.trim();
+      const hasSite = hasSiteInput.value === 'yes' ? 'Да' : 'Не';
+      const phoneNumber = document.getElementById('phone-number').value.trim();
+
+      const botToken = '8691287054:AAHMb7f1fbTSxdzKvzRyytuRit-fJqYhI7c';
+      const chatId = '8625026165';
+
+      statusMsg.textContent = translations[currentLang]['popup.status.sending'];
+      statusMsg.className = 'form-status';
+
+      const messageText = 
+        `🚀 <b>Нова заявка от Premium Studio!</b>\n` +
+        `--------------------------------------------\n` +
+        `🏢 <b>Агенция:</b> ${agencyName}\n` +
+        `🌐 <b>Има ли сайт в момента:</b> ${hasSite}\n` +
+        `📞 <b>Телефон за връзка:</b> ${phoneNumber}\n` +
+        `--------------------------------------------\n` +
+        `📅 <i>Изпратено на: ${new Date().toLocaleString('bg-BG')}</i>`;
+
+      try {
+        const response = await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            chat_id: chatId,
+            text: messageText,
+            parse_mode: 'HTML'
+          })
+        });
+
+        if (response.ok) {
+          statusMsg.textContent = translations[currentLang]['popup.status.success'];
+          statusMsg.className = 'form-status success';
+          setTimeout(closePopup, 2000);
+        } else {
+          throw new Error('Telegram API error');
+        }
+      } catch (err) {
+        console.error(err);
+        statusMsg.textContent = translations[currentLang]['popup.status.error'];
+        statusMsg.className = 'form-status error';
+      }
+    });
   }
 
 });

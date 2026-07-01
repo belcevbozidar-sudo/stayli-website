@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stayli — World-Class Websites for Real Estate Agencies</title>
+  <title>Premium Studio — World-Class Websites for Real Estate Agencies</title>
   <meta name="description" content="We design and build bespoke, high-converting websites for premium real estate agencies. Elevate your property brand today.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,17 +16,14 @@
   <header class="header" id="header">
     <div class="header-container">
       <a href="#" class="logo" id="logo-link">
-        <svg class="logo-icon" width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="16" cy="16" r="11" stroke="white" stroke-width="2.5"/>
-          <path d="M16 5.5C10.201 5.5 5.5 10.201 5.5 16C5.5 21.799 10.201 26.5 16 26.5V5.5Z" fill="white"/>
-        </svg>
-        <span class="logo-text">Stayli</span>
+        <img src="premium_studio_logo.png" alt="Premium Studio" class="logo-img">
       </a>
 
       <nav class="nav" id="desktop-nav">
         <ul class="nav-list">
           <li class="nav-item"><a href="#" class="nav-link active" data-i18n="nav.home">Home</a></li>
-          <li class="nav-item"><a href="#" class="nav-link" data-i18n="nav.portfolio">Portfolio</a></li>
+          <li class="nav-item"><a href="#portfolio-section" class="nav-link" data-i18n="nav.portfolio">Portfolio</a></li>
+          <li class="nav-item"><a href="#about-section" class="nav-link" data-i18n="nav.about">About Us</a></li>
           <li class="nav-item"><a href="#" class="nav-link" data-i18n="nav.services">Services</a></li>
           <li class="nav-item"><a href="#" class="nav-link" data-i18n="nav.process">Process</a></li>
           <li class="nav-item"><a href="#" class="nav-link" data-i18n="nav.contact">Contact</a></li>
@@ -70,7 +67,8 @@
   <div class="mobile-nav" id="mobile-nav">
     <ul class="mobile-nav-list">
       <li><a href="#" class="mobile-nav-link active" data-i18n="nav.home">Home</a></li>
-      <li><a href="#" class="mobile-nav-link" data-i18n="nav.portfolio">Portfolio</a></li>
+      <li><a href="#portfolio-section" class="mobile-nav-link" data-i18n="nav.portfolio">Portfolio</a></li>
+      <li><a href="#about-section" class="mobile-nav-link" data-i18n="nav.about">About Us</a></li>
       <li><a href="#" class="mobile-nav-link" data-i18n="nav.services">Services</a></li>
       <li><a href="#" class="mobile-nav-link" data-i18n="nav.process">Process</a></li>
       <li><a href="#" class="mobile-nav-link" data-i18n="nav.contact">Contact</a></li>
@@ -313,6 +311,39 @@
     </div>
   </section>
 
+  <!-- About Us -->
+  <section class="about-section" id="about-section">
+    <div class="about-container">
+      <span class="section-tag" data-i18n="about.tag">Who is behind your results</span>
+      <h2 class="section-title" data-i18n="about.title">The Faces Behind Premium Studio</h2>
+      <p class="section-subtitle" data-i18n="about.subtitle">We are not a large, slow agency with anonymous managers. We work directly with you, shoulder to shoulder, to turn your agency's site into a digital experience that wins loyal clients.</p>
+      
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="about-avatar-wrapper">
+            <img src="team_bozhidar.jpg" alt="Bozhidar Ivanov" class="about-avatar">
+          </div>
+          <div class="about-meta">
+            <span class="about-role-tag" data-i18n="about.role1">Design & Development</span>
+            <h3>Bozhidar Ivanov</h3>
+            <p class="about-member-desc" data-i18n="about.member1.desc">Focused on creating exceptionally fast, modern, and intuitive interfaces that grab attention from the first second and work flawlessly on any device.</p>
+          </div>
+        </div>
+
+        <div class="about-card">
+          <div class="about-avatar-wrapper">
+            <img src="team_kaloyan.png" alt="Kaloyan Dimitrov" class="about-avatar">
+          </div>
+          <div class="about-meta">
+            <span class="about-role-tag" data-i18n="about.role2">Copywriting & Strategy</span>
+            <h3>Kaloyan Dimitrov</h3>
+            <p class="about-member-desc" data-i18n="about.member2.desc">Responsible for the correct structure of information, business logic, and clear formulation of your messaging, so that visitors quickly grant you full trust.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Process -->
   <section class="process-section" id="process-section">
     <div class="process-container">
@@ -441,11 +472,7 @@
       <div class="footer-top">
         <div class="footer-brand">
           <a href="#" class="logo">
-            <svg class="logo-icon" width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="16" cy="16" r="11" stroke="white" stroke-width="2.5"/>
-              <path d="M16 5.5C10.201 5.5 5.5 10.201 5.5 16C5.5 21.799 10.201 26.5 16 26.5V5.5Z" fill="white"/>
-            </svg>
-            <span class="logo-text">Stayli</span>
+            <img src="premium_studio_logo.png" alt="Premium Studio" class="logo-img">
           </a>
           <p class="footer-tagline" data-i18n="foot.tagline">World-class websites<br>for real estate agencies.</p>
         </div>
@@ -460,11 +487,53 @@
         </nav>
       </div>
       <div class="footer-bottom">
-        <p class="footer-copy" data-i18n="foot.copy">© 2025 Stayli. All rights reserved.</p>
+        <p class="footer-copy" data-i18n="foot.copy">© 2025 Premium Studio. All rights reserved.</p>
         <p class="footer-made" data-i18n="foot.made">Built with intention, not a template.</p>
       </div>
     </div>
   </footer>
+
+  <!-- Contact Popup -->
+  <div class="popup-overlay" id="contact-popup">
+    <div class="popup-container">
+      <button class="popup-close" id="popup-close-btn" aria-label="Close popup">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      
+      <h3 class="popup-title" data-i18n="popup.title">Request a Consultation</h3>
+      <p class="popup-subtitle" data-i18n="popup.subtitle">Let's discuss how we can elevate your real estate brand online.</p>
+      
+      <form class="popup-form" id="telegram-contact-form">
+        <div class="form-group">
+          <label for="agency-name" data-i18n="popup.label.agency">Agency Name</label>
+          <input type="text" id="agency-name" required placeholder="e.g. Premium Properties" data-i18n-placeholder="popup.placeholder.agency">
+        </div>
+        
+        <div class="form-group">
+          <label data-i18n="popup.label.has_site">Do you have a current website?</label>
+          <div class="site-toggle-group">
+            <button type="button" class="site-toggle-btn active" data-value="yes" data-i18n="popup.btn.yes">Yes</button>
+            <button type="button" class="site-toggle-btn" data-value="no" data-i18n="popup.btn.no">No</button>
+          </div>
+          <input type="hidden" id="has-site-value" value="yes">
+        </div>
+        
+        <div class="form-group">
+          <label for="phone-number" data-i18n="popup.label.phone">Contact Phone Number</label>
+          <input type="tel" id="phone-number" required placeholder="e.g. +359 888 888 888" data-i18n-placeholder="popup.placeholder.phone">
+        </div>
+        
+        <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">
+          <span data-i18n="popup.btn.submit">Send Request</span>
+        </button>
+        
+        <p class="form-status" id="form-status-msg"></p>
+      </form>
+    </div>
+  </div>
 
   <script src="main.js?v=1.7"></script>
 </body>
