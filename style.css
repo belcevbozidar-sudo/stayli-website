@@ -2262,3 +2262,57 @@ h1, h2, h3, h4, h5, h6 {
 .btn-cta-glow:active {
   transform: translateY(0);
 }
+
+/* ==========================================================================
+   Benefits Marquee
+   ========================================================================== */
+.benefits-marquee-container {
+  overflow: hidden;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.02);
+  padding: 1.1rem 0;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+.benefits-marquee-track {
+  display: inline-flex;
+  white-space: nowrap;
+  align-items: center;
+  gap: 1.5rem;
+  animation: marquee-scroll 26s linear infinite;
+  width: max-content;
+}
+
+.benefits-marquee-container:hover .benefits-marquee-track {
+  animation-play-state: paused;
+}
+
+.benefits-marquee-track span {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 0.02em;
+}
+
+.benefits-marquee-track .marquee-sep {
+  font-family: var(--font-secondary);
+  font-style: normal;
+  color: #fbbf24; /* Golden/Beige accent */
+  font-size: 1.2rem;
+  margin: 0 4px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@keyframes marquee-scroll {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
